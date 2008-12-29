@@ -1,7 +1,6 @@
 #labels chat
 = Data =
 
-Add your content here.
  * *Server*: chat.freenode.net
  * *Port*: 6667
  * *Channel*: #skynova
