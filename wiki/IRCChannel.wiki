@@ -3,11 +3,9 @@
 
 = IRC Channel =
 
-*Link to access the IRC Channel*
+*_URL_ to access the IRC Channel*
 
 http://embed.mibbit.com/?server=chat.freenode.net&channel=%23skynova
-
-
 
 
 
