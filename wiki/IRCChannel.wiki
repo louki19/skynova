@@ -1,0 +1,13 @@
+#summary One-sentence summary of this page.
+#labels irc,channel
+
+= IRC Channel =
+
+*Link to access the IRC Channel*
+
+http://embed.mibbit.com/?server=chat.freenode.net&channel=%23skynova
+
+
+
+
+
