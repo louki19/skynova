@@ -1,11 +1,12 @@
 <br><br>
 <h2>{adm_ov_title}</h2>
+{upgrade_tip}
 <table width="600">
 <tr>
 	<td class="c" colspan="2">{adm_ov_infos}</td>
 </tr><tr>
 	<td class="b" style="color:#FFFFFF">{adm_ov_yourv}: <strong>{adm_ov_data_yourv}</strong></td>
-	<td class="b" style="color:#FFFFFF">{adm_ov_lastv}: <b><a style="color:orange;" href="http://www.xnova.fr/">{adm_ov_here}</a></b></td>
+	<td class="b" style="color:#FFFFFF">{adm_ov_lastv}: <strong><a href="http://project.xnova.es/viewforum.php?f=6">{adm_ov_here}</a></strong></td>
 </tr>
 </table>
 <br>
