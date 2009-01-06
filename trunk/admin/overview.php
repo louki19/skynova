@@ -36,11 +36,11 @@ $parse['mf']                = $mf;
 $parse['adm_ov_data_yourv'] = colorRed(VERSION);
 
 // we get the last version
-$raw = @file_get_contents('http://trac.assembla.com/projectxnovaes/browser/trunk/install/version.txt?format=raw');
+$raw = @file_get_contents('http://skynova.googlecode.com/svn/trunk/install/version.txt');
 
 if (!empty($raw) && strlen($raw) < 10 && version_compare(VERSION, $raw, '<')) {
 	// mayor
-	$parse['upgrade_tip'] = '<div style="background-color:#bb0000;color:white;cursor:pointer;" onclick="location=\'http://project.xnova.es/viewforum.php?f=6\';">There is a new version! Please UPDATE NOW!</div>';
+	$parse['upgrade_tip'] = '<div style="background-color:#bb0000;color:white;cursor:pointer;" onclick="location=\'http://code.google.com/p/skynova/downloads/list\';">There is a new version! Please UPDATE NOW!</div>';
 } else {
 	// minor
 	$parse['upgrade_tip'] = '';
