@@ -1,0 +1,819 @@
+/* Layout, based on layouts from http://csseasy.com/ */
+body {
+background-color:#1e1d23;
+color:#f2f2f2;
+font-family:Trebuchet MS,Arial,Helvetica,sans-serif;
+font-size:13px;
+text-align:center;
+font-weight:bold;
+background-image:url(images/background.jpg);
+background-attachment: fixed;
+background-repeat:no-repeat;
+padding-right:10%;
+padding-left:10%;
+}
+
+#cleared {
+clear:both;
+}
+
+#logo{
+float:left;
+width:320px;
+}
+
+#cabecera{
+float:right;
+}
+
+#left{ 
+float:left;
+width:20%;
+}
+
+#right{ 
+float:right;
+}
+
+#main { 
+margin-left:20%;
+height:auto !important; /* for modern browsers */
+}
+
+/* Links */
+a {
+color:#f2f2f2;
+font-size:15px;
+font-weight:700;
+cursor:pointer;
+}
+
+a:link {
+text-decoration:none;
+}
+
+a:visited {
+text-decoration:none;
+}
+
+a:hover {
+color:#f90;
+}
+
+/* Forms elements */
+input,textarea,select{
+color:#666;
+background-color:#222;
+font-family:"Trebuchet MS";
+border:1px dotted #666;
+}
+input {
+background-image:url(images/input.png);
+font-weight:700;
+color:#BBBBBB;
+text-align:center;
+}
+
+select:hover,input:hover,textarea:hover {
+border:1px solid #666;
+color:#AAAAAA;
+}
+
+/* Text styles */
+.resourcesCountText {
+color:#aaa;
+font-size:9pt;
+}
+
+h2 {
+color:#f90;
+margin-bottom:0px;
+font-size:20px;
+font-weight:700;
+}
+
+/* Tooltips */
+div#toolTip {
+text-align:left;
+border:1px solid #545454;
+background-color:#222;
+-moz-border-radius:7px;
+border-radius: 7px;
+font-weight:normal;
+}
+
+.toolTipTable {
+text-align:center;
+}
+
+.toolTipTable td, .toolTipTable th {
+border:1px solid #545454;
+}
+
+.planetToolTip,.fleetToolTip{
+border:0px;
+text-align:center;
+}
+
+/* Tabs */
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.tab{
+float:left;
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+.tab li{
+display: inline;
+margin: 0;
+}
+
+.tab li a{
+padding: 3px 7px;
+padding-right: 32px; /*extra right padding to account for curved right edge of tab image*/
+background: transparent url(images/tab.png) 100% 0px no-repeat; /*give illusion of shifting 1px down vertically*/
+border-left: 1px solid #545454;
+position: relative;
+display: block;
+float: left;
+margin-left: -20px; /*shift tabs 20px to the left so they overlap*/
+left: 20px;
+}
+
+.tab li.tabSelected a{ /*selected tab style*/
+z-index: 100; /*higher z-index so selected tab is topmost*/
+background: transparent url(images/tabSelected.png) 100% 0 no-repeat;
+}
+
+.tab li.selected a:hover{
+text-decoration: none;
+}
+
+#tabContent {
+text-align:center;
+padding:10px;
+border:1px solid #545454;
+}
+
+/* Windows */
+/* Powered by Interface http://interface.eyecon.ro */
+
+.window
+{
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	display: none;
+	z-index:100;
+}
+.windowTop
+{
+	height: 30px;
+	overflow: 30px;
+	background-image: url(windows/window_top_end.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+	cursor: move;
+}
+.windowTopContent
+{
+	margin-right: 13px;
+	background-image:url(windows/window_top_start.png);
+	background-position:left top;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #6caf00;
+}
+.windowMin
+{
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	cursor: pointer;
+}
+.windowMax
+{
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	cursor: pointer;
+	display: none;
+}
+.windowClose
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+.windowBottom
+{
+	position: relative;
+	height: 270px;
+	background-image: url(windows/window_bottom_end.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+.windowBottomContent
+{
+	position: relative;
+	height: 270px;
+	background-image: url(windows/window_bottom_start.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	margin-right: 13px;
+}
+.windowResize
+{
+	position: absolute;
+	right: 3px;
+	bottom: 5px;
+	cursor: se-resize;
+}
+.windowContent
+{
+	position:absolute;
+	top: 30px;
+	left: 10px;
+	width: auto;
+	height: auto;
+	overflow: auto;
+	margin-right: 10px;
+	border: 1px solid #6caf00;
+	height: 255px;
+	width: 375px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #1e1d23;
+}
+.windowContent *
+{
+	margin: 10px;
+}
+
+.windowTransfer
+{
+	border: 1px solid #6BAF04;
+	background-color: #B4F155;
+	filter:alpha(opacity=30); 
+	-moz-opacity: 0.3; 
+	opacity: 0.3;
+}
+
+/* Images */
+.shipToolTipImage {
+border:0;
+width:150px;
+}
+
+.technologyImage {
+border:0;
+height:120px;
+width:120px;
+}
+
+.descriptionImage {
+width:250px;
+}
+
+/* Tables */
+th {
+background-image:url(images/tableHeader.png);
+text-align:center;
+font-weight:bold;
+}
+
+.generalTable {
+color:#f2f2f2;
+text-align:center;
+}
+
+.generalTable td, .generalTable th {
+border:1px solid #545454;
+text-align:center;
+}
+
+/* Queue */
+
+.queueTable {
+font-weight:700;
+text-align:center;
+width:100%;
+}
+
+.queueTable td, .queueTable th {
+border:1px solid #545454;
+}
+
+.currentQueueItemTable {
+font-weight:700;
+text-align:center;
+width:100%;
+}
+
+.currentQueueItemTable td, .currentQueueItemTable th {
+border:1px solid #545454;
+}
+
+.currentQueueImage {
+height:75px;
+width:75px;
+}
+
+.progressDiv {
+background-image:url(images/progressDiv.png);
+background-repeat:repeat-x;
+}
+
+#currentQueueInfo{
+text-align:left;
+}
+#cancelCurrentQueue{
+width:75px;
+}
+
+/* Header */
+.messagesImage {
+cursor:pointer;
+}
+
+.selectPlanet {
+font-size:11px;
+}
+
+.resourceTable td {
+text-align:center;
+width:70px;
+height:30px;
+}
+
+.resourcesText {
+color:#fff;
+font-family:"Trebuchet MS";
+font-size:12.5px;
+font-style:oblique;
+font-weight:800;
+text-align:center;
+}
+
+/* Menu */
+.leftMenu {
+list-style-image:url(images/menu.gif);
+list-style-type:square;
+text-align:left;
+vertical-align:middle;
+margin-top:0px;
+}
+
+.leftMenuHeader {
+list-style-type:none;
+list-style-image:none;
+}
+
+.leftMenuSeparator {
+height:1px;
+list-style-type:none;
+list-style-image:none;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+/* General view */
+.generalViewPlanetImage {
+border:1px solid #545454;
+height:250px;
+width:250px;
+}
+
+.thumbnailPlanet {
+border:1px solid #545454;
+height:90px;
+width:90px;
+}
+
+.thumbnailMoon {
+border:1px solid #545454;
+height:45px;
+width:45px;
+}
+
+.generalViewTable {
+border:hidden;
+width:100%;
+text-align:center;
+}
+
+.generalViewTableText1 {
+font-family:Georgia;
+font-size:12px;
+font-style:italic;
+font-weight:700;
+}
+
+.resourcesTable {
+width:100%;
+text-align:center;
+}
+
+.resourcesTable td,.resourcesTable th {
+border:1px solid #545454;
+}
+
+.eventFinish{
+color:coral;
+}
+
+.eventTime{
+color:lime;
+}
+
+.eventsTable{
+width:100%;
+text-align:center;
+}
+
+/* Empire view */
+.empireTable {
+font-family:"Trebuchet MS";
+font-weight:normal;
+width:100%;
+text-align:center;
+vertical-align:middle;
+}
+
+.empireTable td {
+border:1px solid #545454;
+}
+
+.empireTable th {
+border:1px solid #545454;
+}
+
+/* Builds and investigations */
+.buildTable {
+text-align:left;
+font-weight:normal;
+vertical-align:middle;
+width:100%;
+}
+
+.buildTable td, .buildTable th {
+border:1px solid #545454;
+}
+
+.buildLink {
+color:#0C0;
+}
+
+.buildLink:visited {
+color:#0C0;
+}
+
+.buildLink:hover {
+color:#0F0;
+}
+
+.buildHeader {
+text-align:center;
+width:75px;
+}
+
+/* Fleet view */
+.fleetTable {
+width:100%;
+text-align:center;
+vertical-align:middle;
+}
+
+.fleetTable td, .fleetTable th {
+border:1px solid #545454;
+}
+
+.rapidAccessTable {
+width:100%;
+}
+
+.technologyTable {
+width:100%;
+text-align:left;
+vertical-align:middle;
+}
+
+.technologyTable a {
+text-align:left;
+vertical-align:middle;
+font-size:13px;
+}
+
+.technologyTable td, .technologyTable th {
+border:1px solid #545454;
+}
+
+/* Galaxy */
+.galaxyTypeTable {
+float:left;
+width:75px;
+}
+
+.GalaxyControlsTable {
+font-weight:700;
+text-align:center;
+}
+
+.sendMessageImage {
+border:0;
+}
+
+/* Galaxy classic */
+.galaxyTable {
+text-align:center;
+margin:20px auto 0px;
+}
+
+.galaxyTable td, .galaxyTable th {
+border:1px solid #545454;
+}
+
+.galaxyHighlightedPlanet
+{
+color:lime;
+}
+
+.classicGalaxyPlanetImage {
+height:50px;
+width:50px;
+}
+
+.classicGalaxyImage {
+height:30px;
+width:30px;
+}
+
+.classicGalaxyHeader {
+width:100%;
+}
+
+/* Alliance */
+.allianceLogo {
+max-height:650px;
+max-width:100%;
+}
+
+.memberListTable {
+text-align:center;
+width:100%;
+}
+
+.memberListTable td {
+border:1px solid #545454;
+}
+
+.memberListTable th {
+border:1px solid #545454;
+}
+
+.allianceTable {
+text-align:center;
+width:100%;
+}
+
+.allianceTable td {
+border:1px solid #545454;
+}
+
+.allianceTable th {
+border:1px solid #545454;
+}
+
+.allianceStatusInfo {
+margin-left:10px;
+text-align:left;
+}
+
+.allianceSettingsTable {
+font-weight:700;
+text-align:center;
+width:100%;
+}
+
+.allianceSettingsTable td {
+border:1px solid #545454;
+}
+
+.allianceSettingsTable th {
+border:1px solid #545454;
+}
+
+/* Battles */
+.battleSimulator {
+width:100%;
+text-align:center;
+vertical-align:middle;
+font-size:11px;
+font-weight:normal;
+}
+
+.battleSimulator td {
+border:1px solid #545454;
+}
+
+.battleSimulator th {
+border:1px solid #545454;
+}
+
+.battleReport {
+width:100%;
+text-align:center;
+vertical-align:middle;
+font-size:11px;
+font-weight:normal;
+}
+
+.battleReport table {
+margin:0px auto 0px;
+}
+
+h3, h4{
+margin:0px;
+}
+
+/* Statistics */
+.statisticTable {
+text-align:center;
+margin:0pt auto;
+width:500px;
+}
+.statisticTable a
+{
+font-size:13px;
+}
+
+.statisticTable td, .statisticTable th {
+border:1px solid #545454;
+}
+
+/* Search */
+.searchTable {
+text-align:center;
+width:100%;
+}
+
+.searchTable td, .searchTable th {
+border:1px solid #545454;
+}
+
+.searchPages
+{
+font-size:20px;
+}
+
+.currentSearhPage
+{
+font-size:30px;
+}
+
+/* Messages */
+.messageTable {
+text-align:left;
+vertical-align:top;
+width:100%;
+}
+
+.messageTable table {
+text-align:center;
+width:100%;
+}
+
+.messageTable td {
+border:1px solid #545454;
+}
+
+.messageTable th {
+border:1px solid #545454;
+}
+
+.messageHeader {
+background-image:url(images/tableHeader.png);
+font-weight:400;
+text-align:left;
+}
+
+.messageFilterTable {
+text-align:center;
+vertical-align:middle;
+}
+
+.messageTypeinforme/* Reports */ {
+text-align:center;
+}
+
+.messageTypealianza/* Alliance messages */ {
+background-color:#333;
+}
+
+.messageTypeflota/* Fleet messages */ {
+background-color:#333;
+}
+
+.messageTypejugador/* Players messages */ {
+background-color:#333;
+}
+
+.messageTypepapelera/* Recycle bin */ {
+background-color:#333;
+}
+
+.sendMessageTable {
+font-weight:700;
+text-align:center;
+width:100%;
+}
+
+.sendMessageTable td {
+border:1px solid #545454;
+}
+
+.sendMessageTable th {
+border:1px solid #545454;
+}
+
+/* Notes */
+.noteTable {
+font-weight:700;
+text-align:center;
+width:95%;
+}
+
+.noteTable td {
+border:1px solid #545454;
+}
+
+.noteTable th {
+border:1px solid #545454;
+}
+
+/* User panel */
+.settingsTable {
+font-weight:700;
+text-align:center;
+width:100%;
+}
+
+.settingsTable td, .settingsTable th {
+border:1px solid #545454;
+}
+
+/* Descriptions */
+.descriptionTable {
+text-align:center;
+width:100%;
+}
+
+.descriptionTable td, .descriptionTable th {
+border:1px solid #545454;
+}
+
+/* Message sending */
+.textAreaSendMessage {
+text-align:left;
+}
+
+/* Requests */
+.requestTable
+{width:100%;
+text-align:center;
+}
+.requestTable td, .requestTable th {
+border:1px solid #545454;
+}
+
+/* TinyMCE frame */
+.htmlEditor {
+border:0px;
+width:100%;
+height:325px;
+}
+
+.paginador a {
+font-family:Georgia;
+font-style:italic;
+font-weight:normal;
+}
+
+.espionaje {
+font-weight:normal;
+}
