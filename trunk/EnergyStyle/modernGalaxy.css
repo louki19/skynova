@@ -1,0 +1,258 @@
+.spaceImage {
+position:relative;
+border:1px solid #545454;
+background-image:url(modernGalaxy.jpg);
+width:1115px;
+height:700px;
+float:left;
+left:0px;
+margin:0px auto 0px;
+}
+
+.Planet {
+position:absolute;
+background-position:center;
+width:75px;
+height:75px;
+z-index:1;
+}
+
+.PlanetTable {
+position:absolute;
+width:125px;
+height:75px;
+text-align:left;
+font-family:"Trebuchet MS";
+font-weight:600;
+color:#f2f2f2;
+font-size:9pt;
+z-index:3;
+}
+
+.Debris {
+position:absolute;
+width:50px;
+height:50px;
+z-index:2;
+}
+
+.Moon {
+position:absolute;
+width:40px;
+height:40px;
+z-index:0;
+}
+
+.highlightedPlanet
+{
+position:absolute;
+width:100px;
+height:75px;
+text-align:left;
+font-family:"Trebuchet MS";
+font-weight:600;
+font-size:9pt;
+z-index:3;
+border:1px solid #f2f2f2;
+}
+
+#Escombros1
+{	
+	left:845px;
+	top:389px;
+}
+#Escombros2
+{	
+	left:776px;
+	top:500px;
+}
+#Escombros3
+{	
+	left:559px;
+	top:597px;
+}
+#Escombros4
+{	
+	left:304px;
+	top:524px;
+}
+#Escombros5
+{	
+	left:154px;
+	top:412px;
+}
+#Escombros6
+{	
+	left:259px;
+	top:203px;
+}
+#Escombros7
+{	
+	left:403px;
+	top:82px;
+}
+#Escombros8
+{	
+	left:39px;
+	top:238px;
+}
+#Escombros9
+{	
+	left:215px;
+	top:59px;
+}
+#Escombros10
+{	
+	left:30px;
+	top:81px;
+}
+#Tabla1
+{	
+	left:896px;
+	top:349px;
+}
+#Tabla2
+{	
+	left:827px;
+	top:467px;
+}
+#Tabla3
+{	
+	left:611px;
+	top:548px;
+}
+#Tabla4
+{	
+	left:354px;
+	top:476px;
+}
+#Tabla5
+{	
+	left:206px;
+	top:363px;
+}
+#Tabla6
+{	
+	left:309px;
+	top:162px;
+}
+#Tabla7
+{	
+	left:453px;
+	top:38px;
+}
+#Tabla8
+{	
+	left:91px;
+	top:190px;
+}
+#Tabla9
+{	
+	left:267px;
+	top:15px;
+}
+#Tabla10
+{	
+	left:82px;
+	top:32px;
+}
+#Planeta1
+{	
+	left:819px;
+	top:348px;
+}
+#Planeta2
+{	
+	left:751px;
+	top:462px;
+}
+#Planeta3
+{	
+	left:534px;
+	top:548px;
+}
+#Planeta4
+{	
+	left:278px;
+	top:476px;
+}
+#Planeta5
+{	
+	left:129px;
+	top:362px;
+}
+#Planeta6
+{	
+	left:233px;
+	top:157px;
+}
+#Planeta7
+{	
+	left:377px;
+	top:32px;
+}
+#Planeta8
+{	
+	left:14px;
+	top:189px;
+}
+#Planeta9
+{	
+	left:190px;
+	top:16px;
+}
+#Planeta10
+{	
+	left:5px;
+	top:32px;
+}
+#Luna1
+{	
+	left:853px;
+	top:329px;
+}
+#Luna2
+{	
+	left:786px;
+	top:441px;
+}
+#Luna3
+{	
+	left:569px;
+	top:531px;
+}
+#Luna4
+{	
+	left:312px;
+	top:460px;
+}
+#Luna5
+{	
+	left:164px;
+	top:344px;
+}
+#Luna6
+{	
+	left:268px;
+	top:142px;
+}
+#Luna7
+{	
+	left:412px;
+	top:16px;
+}
+#Luna8
+{	
+	left:49px;
+	top:170px;
+}
+#Luna9
+{	
+	left:225px;
+	top:2px;
+}
+#Luna10
+{	
+	left:40px;
+	top:16px;
+}

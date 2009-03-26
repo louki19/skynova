@@ -1,0 +1,129 @@
+.loginBody {
+background-color:#222;
+color:#f2f2f2;
+font-family:"Trebuchet MS";
+font-size:13px;
+text-align:center;
+font-weight:bold;
+background-image:url(images/background.jpg);
+background-repeat:repeat-x;
+text-align:center;
+}
+
+.generalTable {
+color:#f2f2f2;
+text-align:center;
+}
+
+.generalTable td, .generalTable th {
+border:1px solid #545454;
+text-align:center;
+}
+
+h2 {
+color:#f90;
+margin-bottom:0px;
+font-size:20px;
+font-weight:700;
+}
+
+/* Links */
+a {
+color:#f2f2f2;
+font-size:15px;
+font-weight:700;
+cursor:pointer;
+}
+
+a:link {
+text-decoration:none;
+}
+
+a:visited {
+text-decoration:none;
+}
+
+a:hover {
+color:#f90;
+}
+
+/* FORMULARIOS */
+.fxform {
+text-align:center;
+margin-left:25px;
+margin-right:25px;
+width:650px;
+}
+
+.fxform fieldset {
+border-style:none none solid;
+border-width:medium medium 1px;
+margin:0 0 7px;
+padding:0 0 10px;
+}
+
+.fxform legend {
+line-height:100%;
+text-transform:uppercase;
+font-family:"Lucida Grande";
+font-size:9pt;
+font-weight:700;
+color:#eee;
+margin:0 0 25px 20px;
+padding:0;
+}
+
+.fxform div {
+margin-top:10px;
+text-align:left;
+margin-left:70px;
+min-height:25px;
+}
+
+.fxform div:hover {
+background:#37363c;
+}
+
+.fxform .error {
+background:#ffccc9 none repeat scroll 0 50%;
+margin-left:35%;
+width:350px;
+color:#111;
+padding:1px 3px 3px;
+}
+
+.fxform label {
+font-weight:700;
+width:35%;
+float:left;
+padding-top:5px;
+}
+
+.fxform input[type=text],.fxform input[type=password],.fxform textarea,.fxform select {
+background-image:url(images/textBackground.gif);
+background-position:left top;
+background-repeat:repeat-x;
+border:1px solid #545454;
+color:#000000;
+font-family:Georgia,"Times New Roman",Times,serif;
+font-size:13px;
+font-weight:bold;
+padding:4px;
+}
+
+.fxform textarea {
+width:350px;
+height:100px;
+}
+
+.fxform .fieldError {
+border:2px solid red !important;
+}
+
+.fxform .fieldDescription {
+clear:both;
+color:#999;
+font-size:80%;
+margin-left:35%;
+padding:3px 0;
+}
