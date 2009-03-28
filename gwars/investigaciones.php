@@ -6,6 +6,7 @@ include('src/adminTecnologias.php');
 $Cola=new Cola(2);
 
 $Cola->MostrarTecnologiaEnConstruccion();
+$Cola->MostrarCola();
 
 echo '<br>';
 CabeceraTab();
@@ -22,7 +23,6 @@ CierreTab();
 $Cola->TablaTecnologias();
 
 echo '</table></div></div><br>';
-$Cola->MostrarCola();
 
 ActualizarDatosCabecera();
 ?>
