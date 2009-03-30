@@ -1,5 +1,5 @@
 <?php
-
+include('src/tecnologia.php');
 /*
 $tiempoAproximado;//Tiempo aproximado de construccion de la cola
 $evento;//Evento de construccion actual
