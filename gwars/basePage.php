@@ -21,7 +21,6 @@ $inicioCreacion=microtime(true);
 //FIN
 
 include('src/configuracion.php');
-include('src/tecnologia.php');
 include_once('src/funciones.php');
 include('src/eventos.php');
 include('src/jugador.php');
